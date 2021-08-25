@@ -6,21 +6,35 @@ const wordContainer = document.querySelector('#wordContainer');
 
 let newData = {};
 
+const separateStringInNewLine = (string) => {
+	return string.split(';').join(';\n');
+};
+
 data.forEach((word) => {
 	newData[word.word] = {
 		word: word.word,
-		meaning: word.meaning,
+		meaning: separateStringInNewLine(word.meaning),
 		origin: word.origin,
 	};
 });
+
+// searchBar.addEventListener('keydown', (e) => {
+// 	let keys = Object.keys(newData);
+// 	keys.forEach((key) => {
+// 		if (key[0] === e.target.value[0]) {
+// 			console.log(key);
+// 		}
+// 	});
+// });
 
 const keyup$ = fromEvent(searchBar, 'keyup');
 
 keyup$
 	.pipe(
 		map((i) => {
-			if (newData[i.currentTarget.value]) {
-				return newData[i.currentTarget.value];
+			wordContainer.style.opacity = 0;
+			if (newData[i.currentTarget.value.trim().toLowerCase()]) {
+				return newData[i.currentTarget.value.trim().toLowerCase()];
 			}
 		}),
 		debounceTime(500)
@@ -32,6 +46,7 @@ keyup$
 			} else {
 				unknownWord();
 			}
+			wordContainer.style.opacity = 1;
 		},
 		error: () => {
 			console.log('error');
@@ -52,8 +67,8 @@ const displayMatchingWord = (matchingWord) => {
 };
 
 const unknownWord = () => {
-	wordContainer.children[0].innerText = 'Unknown word';
+	wordContainer.children[0].innerText = 'Nažalost nema te reči u rečniku...';
 	for (let i = 1; i < wordContainer.children.length; i++) {
-		wordContainer.children[i].innerText = '/';
+		wordContainer.children[i].innerText = '';
 	}
 };

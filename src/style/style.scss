@@ -1,6 +1,54 @@
-.container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.container {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	// box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+	width: 40%;
+	height: 33vh;
+	padding: 3em;
+	text-align: center;
+
+	img {
+		position: absolute;
+		left: 33%;
+		top: 11%;
+		width: 40px;
+	}
+
+	h1 {
+		margin: 0 0 1em;
+	}
+
+	#searchBarContainer {
+		input {
+			padding: 0.5em 1em;
+			font-size: 1em;
+			width: 75%;
+		}
+	}
+
+	#wordContainer {
+		text-align: left;
+		width: 75%;
+		margin: 0 auto;
+		transition: 0.3s ease-in-out;
+
+		#word {
+			font-size: 1.5em;
+			margin-bottom: 0;
+		}
+
+		#meaning {
+			font-size: 1.1em;
+			opacity: 0.9;
+		}
+
+		#origin {
+			font-style: italic;
+			span {
+				font-style: italic;
+			}
+		}
+	}
 }

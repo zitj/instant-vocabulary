@@ -1,8 +1,55 @@
 .container {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 40%;
+  height: 33vh;
+  padding: 3em;
+  text-align: center;
+}
+
+.container img {
+  position: absolute;
+  left: 33%;
+  top: 11%;
+  width: 40px;
+}
+
+.container h1 {
+  margin: 0 0 1em;
+}
+
+.container #searchBarContainer input {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  width: 75%;
+}
+
+.container #wordContainer {
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.container #wordContainer #word {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.container #wordContainer #meaning {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+.container #wordContainer #origin {
+  font-style: italic;
+}
+
+.container #wordContainer #origin span {
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
