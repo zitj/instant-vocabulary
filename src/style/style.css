@@ -10,15 +10,25 @@
   text-align: center;
 }
 
-.container img {
-  position: absolute;
-  left: 33%;
-  top: 11%;
-  width: 40px;
-}
-
 .container h1 {
   margin: 0 0 1em;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  overflow: auto;
+  width: 80%;
+  margin: -23px auto 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container ul li {
+  padding: 0.7em 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+  text-align: left;
+  margin: 0;
 }
 
 .container #searchBarContainer input {
@@ -31,8 +41,8 @@
   text-align: left;
   width: 75%;
   margin: 0 auto;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .container #wordContainer #word {

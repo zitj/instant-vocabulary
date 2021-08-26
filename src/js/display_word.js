@@ -9,7 +9,7 @@ export const displayMatchingWord = (matchingWord, element) => {
 };
 
 export const unknownWord = (element) => {
-	element.children[0].innerText = 'Nažalost nema te reči u rečniku...';
+	element.children[0].innerText = '';
 	for (let i = 1; i < element.children.length; i++) {
 		element.children[i].innerText = '';
 	}
