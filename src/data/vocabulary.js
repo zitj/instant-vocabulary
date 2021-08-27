@@ -96,6 +96,126 @@ export const vocabulary = [
 		origin: 'ital. a battuta',
 	},
 	{
+		id: 17,
+		word: 'abapi',
+		meaning: 'mesec avgust kod Turaka, po sirijskom kalendaru.',
+		origin: 'tur. abaci',
+	},
+	{
+		id: 18,
+		word: 'abadžija',
+		meaning: 'zanatlija koji izrađuje odeću od abe, grube vunene tkanine.',
+		origin: 'tur. abaci',
+	},
+	{
+		id: 19,
+		word: 'abviljen',
+		meaning: 'najstarija faza paleolitika (naziv prema franc. gradu Abvilu)',
+		origin: 'fr. abbevillien',
+	},
+	{
+		id: 20,
+		word: 'abgregacija',
+		meaning: 'izdvajanje, isključivanje, isključenje.',
+		origin: 'lat. abgregatio',
+	},
+	{
+		id: 21,
+		word: 'abd',
+		meaning: 'u arapskim složenim osobnim imenima: sluga, rob, npr. Abd-alah sluga Alahov; Abd-el-kader sluga svemogućeg boga; Abd-el-medžid sluga preslavnog (boga); Abd-ur-rahman sluga milosrdnog itd.',
+		origin: 'arap.',
+	},
+	{
+		id: 22,
+		word: 'abderitizam',
+		meaning: 'glupost, ograničenost, budalaština; up. Abderićani.',
+		origin: '',
+	},
+	{
+		id: 23,
+		word: 'Abderićani',
+		meaning: 'stanovnici starog trakijskog grada Abdere, koji su bili čuveni sa svoje ograničenosti i gluposti; otuda: glupi, ograničeni ljudi.',
+		origin: 'grč. Abderitai',
+	},
+	{
+		id: 24,
+		word: 'abdest',
+		meaning: 'muslimanski verski običaj da pre svake molitve peru ruke, lice i noge; pranje vodom.',
+		origin: 'pere. abdest',
+	},
+	{
+		id: 25,
+		word: 'abdikacija',
+		meaning: 'davanje ostavke na položaj ili zvanje, odricanje',
+		origin: 'lat. abdicatio',
+	},
+	{
+		id: 26,
+		word: 'abdomen',
+		meaning: 'aiat. trbuh, stomak; zool. zadak, zadnji deo tela (kod insekata).',
+		origin: 'lat. abdomen',
+	},
+	{
+		id: 27,
+		word: 'abdominalan',
+		meaning: 'aiat. trbušni; abdominalna trudnoća vanmaterična trudnoća.',
+		origin: 'lat. abdominalis',
+	},
+	{
+		id: 28,
+		word: 'abdominale',
+		meaning: 'pl. zool. ribe mekoperke, slatkovodne i morske, npr. somovi, šarani, štuke, pastrmke, sleđevi (haringe) i dr.',
+		origin: 'lat. abdominales',
+	},
+	{
+		id: 29,
+		word: 'abdominoskopija',
+		meaning: 'med. ispitivanje stomaka radi utvrñivanja uzroka oboljenju.',
+		origin: 'lat. abdomen stomak, grč. skopeo gledam, posmatram',
+	},
+	{
+		id: 30,
+		word: 'abduktor',
+		meaning: 'anat. mišić odmi-cač.',
+		origin: 'lat. abductor',
+	},
+	{
+		id: 31,
+		word: 'abdukcija',
+		meaning: 'l. odvoćenje, odvlačenje, odstranjenje; 2. Log. silogizam čiji je drugi sud (premissa minor) samo verovatan, te je i zaključak verovatan; hir. razmicanje zglobova',
+		origin: 'lat. abductio',
+	},
+	{
+		id: 32,
+		word: 'abe',
+		meaning: 'spat, sveštenik; up. abat',
+		origin: 'fr. abbe',
+	},
+	{
+		id: 33,
+		word: 'abevakuacija',
+		meaning: 'delimično pražnjenje, ispražnjiva-nje',
+		origin: 'lat. ab od, evacuatio pražnje-nje',
+	},
+	{
+		id: 34,
+		word: 'abela',
+		meaning: 'vot. bela topola(Populus alba).',
+		origin: 'lat. albellus beličast',
+	},
+	{
+		id: 35,
+		word: 'abelardizirati uškopiti, ujaloviti',
+		meaning: 'abelmošus (arap. abu-el-misk) mošusna zrna jedne orijentalne biljke, upotrebljavaju se u parfimerijama.',
+		origin: 'po slučaju koji se desio čuvenom sholastiča-ru Pjeru Abelaru, 1079—1142, od roñaka njegove ljubaznice Eloize',
+	},
+	{
+		id: 36,
+		word: 'a beneplačito',
+		meaning: 'kuz. po volji.',
+		origin: 'ital. a beneplacito',
+	},
+	{
 		id: ,
 		word: '',
 		meaning: '',
@@ -105,12 +225,7 @@ export const vocabulary = [
 /*
 
  
-a batuta
-(ital. a battuta)
-muz.prema udarutakta, po tempu.
-
-
-
+a beneplačito (ital. a beneplacito) kuz. po volji.
 
 
     */
