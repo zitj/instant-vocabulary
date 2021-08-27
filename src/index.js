@@ -2,13 +2,14 @@ import { fromEvent, Observable, debounceTime, map, Rx } from '../node_modules/rx
 import { detectingLetters } from './js/suggested_words.js';
 import { separateStringInNewLine } from './js/string_manipulation.js';
 import { displayMatchingWord, unknownWord } from './js/display_word.js';
-import { data } from './data/data.js';
+import { vocabulary } from './data/vocabulary.js';
 
 const searchBar = document.querySelector('#searchBar');
 const wordContainer = document.querySelector('#wordContainer');
 const container = document.querySelector('.container');
 
-let newData = {};
+let objectifiedVocabulary = {};
+
 let list = document.createElement('ul');
 let listItems = ``;
 
@@ -16,13 +17,16 @@ container.appendChild(list);
 
 list.style.opacity = 0;
 
-data.forEach((word) => {
-	newData[word.word] = {
+vocabulary.forEach((word) => {
+	objectifiedVocabulary[word.word] = {
+		id: word.id,
 		word: word.word,
 		meaning: separateStringInNewLine(word.meaning),
 		origin: word.origin,
 	};
 });
+
+console.log(objectifiedVocabulary);
 
 const keyup$ = fromEvent(searchBar, 'keyup');
 
@@ -35,14 +39,14 @@ keyup$
 				return;
 			}
 
-			if (newData[i.currentTarget.value.trim().toLowerCase()]) {
+			if (objectifiedVocabulary[i.currentTarget.value.trim().toLowerCase()]) {
 				list.innerHTML = '';
-				return newData[i.currentTarget.value.trim().toLowerCase()];
+				return objectifiedVocabulary[i.currentTarget.value.trim().toLowerCase()];
 			}
-			detectingLetters(i, newData, list, listItems);
+			detectingLetters(i, objectifiedVocabulary, list, listItems);
 			list.style.opacity = 1;
 		}),
-		debounceTime(200)
+		debounceTime(300)
 	)
 	.subscribe({
 		next: (matchingWord) => {

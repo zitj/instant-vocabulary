@@ -62,4 +62,8 @@
 .container #wordContainer #origin span {
   font-style: italic;
 }
+
+.container #wordContainer #id {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

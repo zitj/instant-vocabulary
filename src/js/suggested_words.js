@@ -1,7 +1,12 @@
 export const detectingLetters = (e, object, list, listItems) => {
 	if (e.currentTarget.value === '') return;
 
+	let onlyLetters = new RegExp(`^[a-zA-Z]+$`);
+
+	if (!onlyLetters.test(e.currentTarget.value)) return;
+
 	let detectingLetters = new RegExp(`^${e.currentTarget.value}`);
+
 	let keys = Object.keys(object);
 
 	keys.forEach((key) => {
