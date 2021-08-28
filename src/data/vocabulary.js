@@ -300,6 +300,12 @@ export const vocabulary = [
 		origin: 'lat. ab instantia',
 	},
 	{
+		id: 51,
+		word: 'ab intestato',
+		meaning: 'prav. bez testamenta.',
+		origin: 'lat. ab intestato',
+	},
+	{
 		id: ,
 		word: '',
 		meaning: '',
@@ -307,8 +313,7 @@ export const vocabulary = [
 	},
 ];
 /*
-11
-ab instancija (lat. ab instantia) prav. v. pod instancija.
+ab intestato (lat. ab intestato) prav. bez testamenta.
 
 
 */
