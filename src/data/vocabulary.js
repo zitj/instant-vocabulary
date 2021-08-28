@@ -170,7 +170,7 @@ export const vocabulary = [
 	{
 		id: 29,
 		word: 'abdominoskopija',
-		meaning: 'med. ispitivanje stomaka radi utvrñivanja uzroka oboljenju.',
+		meaning: 'med. ispitivanje stomaka radi utvrđivanja uzroka oboljenju.',
 		origin: 'lat. abdomen stomak, grč. skopeo gledam, posmatram',
 	},
 	{
@@ -207,13 +207,97 @@ export const vocabulary = [
 		id: 35,
 		word: 'abelardizirati uškopiti, ujaloviti',
 		meaning: 'abelmošus (arap. abu-el-misk) mošusna zrna jedne orijentalne biljke, upotrebljavaju se u parfimerijama.',
-		origin: 'po slučaju koji se desio čuvenom sholastiča-ru Pjeru Abelaru, 1079—1142, od roñaka njegove ljubaznice Eloize',
+		origin: 'po slučaju koji se desio čuvenom sholastiča-ru Pjeru Abelaru, 1079—1142, od rođaka njegove ljubaznice Eloize',
 	},
 	{
 		id: 36,
 		word: 'a beneplačito',
 		meaning: 'kuz. po volji.',
 		origin: 'ital. a beneplacito',
+	},
+	{
+		id: 37,
+		word: 'aber',
+		meaning: 'v. haber',
+		origin: '',
+	},
+	{
+		id: 38,
+		word: 'aberacija',
+		meaning: '1. opt. nesticanje svetlosnih zrakova u jednu žižu; sferna ili monohromatska aberacija nesticanje svetlosnih zrakova u jednu tačku pri odbijanju o loptno izdube-no ogledalo ili pri prelamanju kroz sočivo loptnog oblika; hromatska aberacija nesticanje u jednu tačku bele svetlosti usled različite prelomljivosti raznobojnih svetlosti koje sačinjavaju belu svetlost, prolaskom kroz sočivo; 2. astr. prividno pomeranje nebeskog tela kao posledica kretanja Zemlje i netrenutnog prostiranja svetlosti; 3. fig. skretanje, odstupanje od normalnog tipa, lutanje, zabluda.',
+		origin: 'lat. aberrare odlutati, aberratio',
+	},
+	{
+		id: 39,
+		word: 'aberacio kriminis',
+		meaning: 'prav. zabluda u izvršenju zločina, npr. kad se utvrdi da je zločin koji je izvršio Edip bio, u stvari, ocoubistvo, a ne ono što je on želeo da učini.',
+		origin: 'lat. aberratio criminis',
+	},
+	{
+		id: 40,
+		word: 'aberdar',
+		meaning: 'v. haberdar.',
+		origin: '',
+	},
+	{
+		id: 41,
+		word: 'aberirati',
+		meaning: 'odlutati, zablude-ti, skrenuti, skretati; varati se, prevariti se.',
+		origin: 'lat. ab-errare',
+	},
+	{
+		id: 42,
+		word: 'abest',
+		meaning: 'koji nije došao, odsutan.',
+		origin: 'lat.',
+	},
+	{
+		id: 43,
+		word: 'ab eterno',
+		meaning: 'oduvek, od iskona, od pamtiveka.',
+		origin: 'lat. ab eterno',
+	},
+	{
+		id: 44,
+		word: 'abeceda',
+		meaning: '1. sva slova u našoj latinici pore-đana po utvrđenom redu; naziv je dobiven objedinjavanjem imena za prva četiri slova, s tom razlikom što je poslednji član, koji je ušao u sastav naziva, dobio završetak a: a-bece- d(a) = abeceda, umesto završetak e(a-bece-de); azbuka, alfabet; Z. fig. osnova, osnovna znanja iz neke nauke ili veštine.',
+		origin: '',
+	},
+	{
+		id: 45,
+		word: 'abecedar',
+		meaning: 'početnik u nekoj struci; bukvarac.',
+		origin: 'reč sa latinskim oblikom, sastavljena od prva četiri glasa latinske azbuke a, b, c, d',
+	},
+	{
+		id: 46,
+		word: 'abzac',
+		meaning: 'u proznom i pesničkom tekstu: počinjanje nove rečenice novim redom tako da se prva reč te rečenice uvlači malo udesno; stav, stanka, usek, odsek; prelom, cezura (u stihu); up. ali-neja.',
+		origin: 'nem. Absatz',
+	},
+	{
+		id: 47,
+		word: 'abijetin',
+		meaning: 'nem. smolasta materija koja se dobiva iz terpentina.',
+		origin: 'lat. abies jela',
+	},
+	{
+		id: 48,
+		word: 'ab inicio',
+		meaning: 'od početka.',
+		origin: 'lat. ab initio',
+	},
+	{
+		id: 49,
+		word: 'ab inkunabulis',
+		meaning: 'od kolevke, od ranog detinjstva, od malih nogu, odmalena.',
+		origin: 'lat. ab incunabulis',
+	},
+	{
+		id: 50,
+		word: 'ab instancija',
+		meaning: 'prav. v. pod instancija.',
+		origin: 'lat. ab instantia',
 	},
 	{
 		id: ,
@@ -223,9 +307,8 @@ export const vocabulary = [
 	},
 ];
 /*
+11
+ab instancija (lat. ab instantia) prav. v. pod instancija.
 
- 
-a beneplačito (ital. a beneplacito) kuz. po volji.
 
-
-    */
+*/
