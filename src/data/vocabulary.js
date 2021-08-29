@@ -44,7 +44,8 @@ export const vocabulary = [
 	{
 		id: 8,
 		word: 'abandon',
-		meaning: 'odstupanje, odricanje odsvog prava; pravo osiguranika da osigu-račuustupi robu ili brod i sve na njemu uz isplatu iznosa na koji su roba ili brod bili osigurani. abas (pere.) jedinica za merenje bisera u Persiji,nešto manja od harata=OD458 g.',
+		meaning:
+			'odstupanje, odricanje odsvog prava; pravo osiguranika da osigu-račuustupi robu ili brod i sve na njemu uz isplatu iznosa na koji su roba ili brod bili osigurani. abas (pere.) jedinica za merenje bisera u Persiji,nešto manja od harata=OD458 g.',
 		origin: 'fr. abandon',
 	},
 	{
@@ -86,7 +87,8 @@ export const vocabulary = [
 	{
 		id: 15,
 		word: 'abaton',
-		meaning: 'deo hrama,svetilišta ili crkve u koji ne smeju ući obični vernici, inoverci i svetovnja-ci; up. aditon.',
+		meaning:
+			'deo hrama,svetilišta ili crkve u koji ne smeju ući obični vernici, inoverci i svetovnja-ci; up. aditon.',
 		origin: 'grč. abatos nepristupačan',
 	},
 	{
@@ -95,6 +97,7 @@ export const vocabulary = [
 		meaning: 'muz.prema udarutakta, po tempu.',
 		origin: 'ital. a battuta',
 	},
+
 	{
 		id: 17,
 		word: 'abapi',
@@ -122,7 +125,8 @@ export const vocabulary = [
 	{
 		id: 21,
 		word: 'abd',
-		meaning: 'u arapskim složenim osobnim imenima: sluga, rob, npr. Abd-alah sluga Alahov; Abd-el-kader sluga svemogućeg boga; Abd-el-medžid sluga preslavnog (boga); Abd-ur-rahman sluga milosrdnog itd.',
+		meaning:
+			'u arapskim složenim osobnim imenima: sluga, rob, npr. Abd-alah sluga Alahov; Abd-el-kader sluga svemogućeg boga; Abd-el-medžid sluga preslavnog (boga); Abd-ur-rahman sluga milosrdnog itd.',
 		origin: 'arap.',
 	},
 	{
@@ -134,7 +138,8 @@ export const vocabulary = [
 	{
 		id: 23,
 		word: 'Abderićani',
-		meaning: 'stanovnici starog trakijskog grada Abdere, koji su bili čuveni sa svoje ograničenosti i gluposti; otuda: glupi, ograničeni ljudi.',
+		meaning:
+			'stanovnici starog trakijskog grada Abdere, koji su bili čuveni sa svoje ograničenosti i gluposti; otuda: glupi, ograničeni ljudi.',
 		origin: 'grč. Abderitai',
 	},
 	{
@@ -164,7 +169,8 @@ export const vocabulary = [
 	{
 		id: 28,
 		word: 'abdominale',
-		meaning: 'pl. zool. ribe mekoperke, slatkovodne i morske, npr. somovi, šarani, štuke, pastrmke, sleđevi (haringe) i dr.',
+		meaning:
+			'pl. zool. ribe mekoperke, slatkovodne i morske, npr. somovi, šarani, štuke, pastrmke, sleđevi (haringe) i dr.',
 		origin: 'lat. abdominales',
 	},
 	{
@@ -182,7 +188,8 @@ export const vocabulary = [
 	{
 		id: 31,
 		word: 'abdukcija',
-		meaning: 'l. odvoćenje, odvlačenje, odstranjenje; 2. Log. silogizam čiji je drugi sud (premissa minor) samo verovatan, te je i zaključak verovatan; hir. razmicanje zglobova',
+		meaning:
+			'l. odvoćenje, odvlačenje, odstranjenje; 2. Log. silogizam čiji je drugi sud (premissa minor) samo verovatan, te je i zaključak verovatan; hir. razmicanje zglobova',
 		origin: 'lat. abductio',
 	},
 	{
@@ -206,7 +213,8 @@ export const vocabulary = [
 	{
 		id: 35,
 		word: 'abelardizirati uškopiti, ujaloviti',
-		meaning: 'abelmošus (arap. abu-el-misk) mošusna zrna jedne orijentalne biljke, upotrebljavaju se u parfimerijama.',
+		meaning:
+			'abelmošus (arap. abu-el-misk) mošusna zrna jedne orijentalne biljke, upotrebljavaju se u parfimerijama.',
 		origin: 'po slučaju koji se desio čuvenom sholastiča-ru Pjeru Abelaru, 1079—1142, od rođaka njegove ljubaznice Eloize',
 	},
 	{
@@ -224,13 +232,15 @@ export const vocabulary = [
 	{
 		id: 38,
 		word: 'aberacija',
-		meaning: '1. opt. nesticanje svetlosnih zrakova u jednu žižu; sferna ili monohromatska aberacija nesticanje svetlosnih zrakova u jednu tačku pri odbijanju o loptno izdube-no ogledalo ili pri prelamanju kroz sočivo loptnog oblika; hromatska aberacija nesticanje u jednu tačku bele svetlosti usled različite prelomljivosti raznobojnih svetlosti koje sačinjavaju belu svetlost, prolaskom kroz sočivo; 2. astr. prividno pomeranje nebeskog tela kao posledica kretanja Zemlje i netrenutnog prostiranja svetlosti; 3. fig. skretanje, odstupanje od normalnog tipa, lutanje, zabluda.',
+		meaning:
+			'1. opt. nesticanje svetlosnih zrakova u jednu žižu; sferna ili monohromatska aberacija nesticanje svetlosnih zrakova u jednu tačku pri odbijanju o loptno izdube-no ogledalo ili pri prelamanju kroz sočivo loptnog oblika; hromatska aberacija nesticanje u jednu tačku bele svetlosti usled različite prelomljivosti raznobojnih svetlosti koje sačinjavaju belu svetlost, prolaskom kroz sočivo; 2. astr. prividno pomeranje nebeskog tela kao posledica kretanja Zemlje i netrenutnog prostiranja svetlosti; 3. fig. skretanje, odstupanje od normalnog tipa, lutanje, zabluda.',
 		origin: 'lat. aberrare odlutati, aberratio',
 	},
 	{
 		id: 39,
 		word: 'aberacio kriminis',
-		meaning: 'prav. zabluda u izvršenju zločina, npr. kad se utvrdi da je zločin koji je izvršio Edip bio, u stvari, ocoubistvo, a ne ono što je on želeo da učini.',
+		meaning:
+			'prav. zabluda u izvršenju zločina, npr. kad se utvrdi da je zločin koji je izvršio Edip bio, u stvari, ocoubistvo, a ne ono što je on želeo da učini.',
 		origin: 'lat. aberratio criminis',
 	},
 	{
@@ -260,7 +270,8 @@ export const vocabulary = [
 	{
 		id: 44,
 		word: 'abeceda',
-		meaning: '1. sva slova u našoj latinici pore-đana po utvrđenom redu; naziv je dobiven objedinjavanjem imena za prva četiri slova, s tom razlikom što je poslednji član, koji je ušao u sastav naziva, dobio završetak a: a-bece- d(a) = abeceda, umesto završetak e(a-bece-de); azbuka, alfabet; Z. fig. osnova, osnovna znanja iz neke nauke ili veštine.',
+		meaning:
+			'1. sva slova u našoj latinici pore-đana po utvrđenom redu; naziv je dobiven objedinjavanjem imena za prva četiri slova, s tom razlikom što je poslednji član, koji je ušao u sastav naziva, dobio završetak a: a-bece- d(a) = abeceda, umesto završetak e(a-bece-de); azbuka, alfabet; Z. fig. osnova, osnovna znanja iz neke nauke ili veštine.',
 		origin: '',
 	},
 	{
@@ -272,7 +283,8 @@ export const vocabulary = [
 	{
 		id: 46,
 		word: 'abzac',
-		meaning: 'u proznom i pesničkom tekstu: počinjanje nove rečenice novim redom tako da se prva reč te rečenice uvlači malo udesno; stav, stanka, usek, odsek; prelom, cezura (u stihu); up. ali-neja.',
+		meaning:
+			'u proznom i pesničkom tekstu: počinjanje nove rečenice novim redom tako da se prva reč te rečenice uvlači malo udesno; stav, stanka, usek, odsek; prelom, cezura (u stihu); up. ali-neja.',
 		origin: 'nem. Absatz',
 	},
 	{
@@ -305,12 +317,13 @@ export const vocabulary = [
 		meaning: 'prav. bez testamenta.',
 		origin: 'lat. ab intestato',
 	},
-	{
-		id: ,
-		word: '',
-		meaning: '',
-		origin: '',
-	},
+
+	// {
+	// 	id: ,
+	// 	word: '',
+	// 	meaning: '',
+	// 	origin: '',
+	// },
 ];
 /*
 ab intestato (lat. ab intestato) prav. bez testamenta.

@@ -22,13 +22,24 @@
   margin: -23px auto 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+  border-right: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+.container ul.staticHeight {
+  height: 210px;
 }
 
 .container ul li {
   padding: 0.7em 2em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+  border-left: 1px solid rgba(0, 0, 0, 0.144);
   text-align: left;
   margin: 0;
+}
+
+.container ul li:last-child {
+  border-bottom: none;
 }
 
 .container #searchBarContainer input {

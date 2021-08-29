@@ -35,6 +35,7 @@ keyup$
 		map((i) => {
 			wordContainer.style.opacity = 0;
 			if (i.currentTarget.value === '') {
+				list.style.opacity = 0;
 				list.innerHTML = '';
 				return;
 			}

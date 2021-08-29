@@ -1,12 +1,12 @@
 export const detectingLetters = (e, object, list, listItems) => {
 	if (e.currentTarget.value === '') return;
 
-	let onlyLetters = new RegExp(`^[a-zA-Z]+$`);
+	let onlyLetters = new RegExp(`^[a-zA-Zćđšžč]+$`);
 
 	if (!onlyLetters.test(e.currentTarget.value)) return;
 
+	let counter = 0;
 	let detectingLetters = new RegExp(`^${e.currentTarget.value}`);
-
 	let keys = Object.keys(object);
 
 	keys.forEach((key) => {
@@ -15,12 +15,18 @@ export const detectingLetters = (e, object, list, listItems) => {
 			listItems += `
                     <li>${key}</li>
             `;
+			counter++;
 		}
 	});
 
 	//Render list
 	list.innerHTML = listItems;
-	if (list.clientHeight >= 200) {
-		list.style.height = '200px';
+
+	if (counter <= 5) {
+		list.classList.remove('staticHeight');
+		console.log(counter);
+	} else {
+		list.classList.add('staticHeight');
+		console.log(counter);
 	}
 };
