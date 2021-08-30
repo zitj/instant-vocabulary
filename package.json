@@ -11,11 +11,8 @@
 	"license": "ISC",
 	"dependencies": {
 		"@reactivex/rxjs": "^6.6.7",
-<<<<<<< HEAD
-=======
 		"cors": "^2.8.5",
 		"express": "^4.17.1",
->>>>>>> test
 		"rxjs": "^7.3.0"
 	},
 	"devDependencies": {
