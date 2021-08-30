@@ -11,7 +11,6 @@ export const detectingLetters = (e, object, list, listItems) => {
 
 	keys.forEach((key) => {
 		if (detectingLetters.test(key)) {
-			console.log(key);
 			listItems += `
                     <li>${key}</li>
             `;
@@ -24,9 +23,7 @@ export const detectingLetters = (e, object, list, listItems) => {
 
 	if (counter <= 5) {
 		list.classList.remove('staticHeight');
-		console.log(counter);
 	} else {
 		list.classList.add('staticHeight');
-		console.log(counter);
 	}
 };

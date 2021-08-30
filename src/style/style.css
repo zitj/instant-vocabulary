@@ -52,8 +52,8 @@
   text-align: left;
   width: 75%;
   margin: 0 auto;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
 }
 
 .container #wordContainer #word {

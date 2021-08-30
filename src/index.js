@@ -2,13 +2,14 @@ import { fromEvent, Observable, debounceTime, map, Rx } from '../node_modules/rx
 import { detectingLetters } from './js/suggested_words.js';
 import { separateStringInNewLine } from './js/string_manipulation.js';
 import { displayMatchingWord, unknownWord } from './js/display_word.js';
-import { vocabulary } from './data/vocabulary.js';
 
 const searchBar = document.querySelector('#searchBar');
 const wordContainer = document.querySelector('#wordContainer');
 const container = document.querySelector('.container');
 
-let objectifiedVocabulary = {};
+const url = 'http://localhost:8080/getWords';
+
+let vocabulary;
 
 let list = document.createElement('ul');
 let listItems = ``;
@@ -17,16 +18,13 @@ container.appendChild(list);
 
 list.style.opacity = 0;
 
-vocabulary.forEach((word) => {
-	objectifiedVocabulary[word.word] = {
-		id: word.id,
-		word: word.word,
-		meaning: separateStringInNewLine(word.meaning),
-		origin: word.origin,
-	};
-});
+const getVocabulary = async () => {
+	const res = await fetch(url);
+	vocabulary = await res.json();
+	console.log(vocabulary);
+};
 
-console.log(objectifiedVocabulary);
+getVocabulary();
 
 const keyup$ = fromEvent(searchBar, 'keyup');
 
@@ -40,19 +38,26 @@ keyup$
 				return;
 			}
 
-			if (objectifiedVocabulary[i.currentTarget.value.trim().toLowerCase()]) {
+			if (vocabulary[i.currentTarget.value.trim().toLowerCase()]) {
 				list.innerHTML = '';
-				return objectifiedVocabulary[i.currentTarget.value.trim().toLowerCase()];
+				return vocabulary[i.currentTarget.value.trim().toLowerCase()];
 			}
-			detectingLetters(i, objectifiedVocabulary, list, listItems);
+			detectingLetters(i, vocabulary, list, listItems);
 			list.style.opacity = 1;
 		}),
-		debounceTime(300)
+		debounceTime(250)
 	)
 	.subscribe({
 		next: (matchingWord) => {
 			if (matchingWord) {
-				displayMatchingWord(matchingWord, wordContainer);
+				let formattedWord = {
+					id: matchingWord.id,
+					word: matchingWord.word,
+					meaning: separateStringInNewLine(matchingWord.meaning),
+					origin: matchingWord.origin,
+				};
+
+				displayMatchingWord(formattedWord, wordContainer);
 			} else {
 				unknownWord(wordContainer);
 			}
