@@ -16,8 +16,6 @@ let listItems = ``;
 
 container.appendChild(list);
 
-list.style.opacity = 0;
-
 const getVocabulary = async () => {
 	const res = await fetch(url);
 	vocabulary = await res.json();
@@ -28,12 +26,23 @@ getVocabulary();
 
 const keyup$ = fromEvent(searchBar, 'keyup');
 
+//TU SI STAO
+
+// document.addEventListener('click', (e) => {
+// 	if (e.target.localName === 'li') {
+// 		list.innerHTML = '';
+// 		list.classList.remove('show');
+// 		searchBar.value = e.target.innerText;
+// 		return vocabulary[e.target.innerText];
+// 	}
+// });
+
 keyup$
 	.pipe(
 		map((i) => {
-			wordContainer.style.opacity = 0;
+			wordContainer.classList.remove('show');
 			if (i.currentTarget.value === '') {
-				list.style.opacity = 0;
+				list.classList.remove('show');
 				list.innerHTML = '';
 				return;
 			}
@@ -42,8 +51,10 @@ keyup$
 				list.innerHTML = '';
 				return vocabulary[i.currentTarget.value.trim().toLowerCase()];
 			}
+
 			detectingLetters(i, vocabulary, list, listItems);
-			list.style.opacity = 1;
+
+			list.classList.add('show');
 		}),
 		debounceTime(250)
 	)
@@ -58,10 +69,11 @@ keyup$
 				};
 
 				displayMatchingWord(formattedWord, wordContainer);
+				wordContainer.classList.add('show');
+				list.classList.remove('show');
 			} else {
 				unknownWord(wordContainer);
 			}
-			wordContainer.style.opacity = 1;
 		},
 		error: (err) => {
 			console.log('error', err);

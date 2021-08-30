@@ -1,3 +1,5 @@
+@import './utilities/animations';
+
 .container {
 	position: absolute;
 	top: 40%;
@@ -13,17 +15,22 @@
 	}
 
 	ul {
-		list-style: none;
-		padding: 0;
 		overflow: auto;
+		list-style: none;
 		width: 80%;
-		margin: -23px auto 0;
-		transition: 0.2s;
+		padding: 0;
+		margin: 0 auto;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.144);
 		border-right: 1px solid rgba(0, 0, 0, 0.144);
+		display: none;
 		&.staticHeight {
 			height: 210px;
 		}
+		&.show {
+			display: block;
+			animation: fadeIn 0.15s;
+		}
+
 		li {
 			padding: 0.7em 2em;
 			border-bottom: 1px solid rgba(0, 0, 0, 0.144);
@@ -32,6 +39,10 @@
 			margin: 0;
 			&:last-child {
 				border-bottom: none;
+			}
+			&:hover {
+				background: #ffeaa7;
+				cursor: pointer;
 			}
 		}
 	}
@@ -47,8 +58,12 @@
 		text-align: left;
 		width: 75%;
 		margin: 0 auto;
-
+		display: none;
 		transition: 0.15s;
+		&.show {
+			display: block;
+			animation: fadeIn 0.1s;
+		}
 
 		#word {
 			font-size: 1.5em;

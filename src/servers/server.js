@@ -10,7 +10,6 @@ app.use(cors());
 
 app.get('/getWords', function (req, res) {
 	fs.readFile('src/data/vocabulary.json', 'utf8', function (err, data) {
-		console.log(data);
 		res.end(data);
 	});
 });
